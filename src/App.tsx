@@ -25,8 +25,7 @@ const App: React.FC = () => {
         <NoteCard />
         <NoteCard />
         <NoteCard />
-        <NoteCard />
-        <NoteCard />
+      
 
 
       </div>
