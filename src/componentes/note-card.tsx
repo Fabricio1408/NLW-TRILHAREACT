@@ -1,7 +1,7 @@
-import * as Dialog from '@radix-ui/react-dialog';
-import { formatDistanceToNow } from 'date-fns'
-import { ptBR } from 'date-fns/locale'
-import { X } from 'lucide-react'
+import * as Dialog from '@radix-ui/react-dialog'; //npm install @radix-ui/react-dialog
+import { formatDistanceToNow } from 'date-fns' //npm i date fns
+import { ptBR } from 'date-fns/locale' //npm i date fns
+import { X } from 'lucide-react' //npm i lucide-react
 
 
 
