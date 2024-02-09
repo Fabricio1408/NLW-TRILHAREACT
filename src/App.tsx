@@ -3,6 +3,9 @@ import React from 'react';
 import { NoteCard } from './componentes/note-card'
 import { NewNoteCard } from './componentes/new-note-card'
 
+
+
+
 const App: React.FC = () => {
   return (
     <div className="mx-auto max-w-6xl my-12 space-y-6">
@@ -15,18 +18,13 @@ const App: React.FC = () => {
 
       <div className='grid grid-cols-3 gap-6 auto-rows-[250px]'>
       
-        <NewNoteCard />
-        
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-      
-
+        <NewNoteCard />  
+        <NoteCard note={
+          {
+        date: new Date(),
+       content: 'ola todos'
+        }
+        } />
 
       </div>
     </div>
