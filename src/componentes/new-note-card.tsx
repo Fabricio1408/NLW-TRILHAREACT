@@ -3,6 +3,8 @@ import { X } from "lucide-react";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "sonner";
 
+
+
 interface NewNoteProps {
   onNoteCreated: (content: string) => void;
 }
@@ -11,7 +13,7 @@ const SpeechRecognitionAPI =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const speechRecognition = new SpeechRecognitionAPI();
-
+//adicionar novo card
 export function NewNoteCard({ onNoteCreated }: NewNoteProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true);
