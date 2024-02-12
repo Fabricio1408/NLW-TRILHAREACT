@@ -3,6 +3,7 @@ import { formatDistanceToNow } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { X } from "lucide-react";
 
+
 interface NoteCardProps {
   note: {
     id: string;
@@ -11,7 +12,7 @@ interface NoteCardProps {
   };
   onNoteDeleted: (id: string) => void;
 }
-
+//adicionar novo card
 export function NoteCard({ note, onNoteDeleted }: NoteCardProps) {
   return (
     <Dialog.Root>
